@@ -4,8 +4,11 @@ frozen = input("Are you want frozen products? True or False?  ")
 
 if frozen.lower() == "true":
     boolean_value = True
-else:
+elif frozen.lower() == "false":
     boolean_value = False
+else:
+    raise ValueError("Invalid input. Please enter 'True' or 'False'.")
+
 
 
 print("Client isn't aware of different types delivery services.")
